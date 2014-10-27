@@ -1,0 +1,53 @@
+@import 'reset';
+
+@import 'variables';
+
+body {
+	font-family: $helvetica;
+	background-color: #A1A1A1;
+}
+h1 {
+	font-size: 30px;
+}
+.container-main {
+	width: 960px;
+	height: 300px;
+	margin: 50px auto 0;
+	border-radius: 10px;
+	background-color: #fff;
+}
+.container-inner {
+	padding: 40px;
+}
+.container-report-dropdown {
+	margin-top: 40px;
+	.settings-icon {
+		background: url('../img/settings-icon.png') no-repeat;
+		display: block;
+		width: 50px;
+		height: 50px;
+		ul {
+			display: none;
+			padding: 15px;
+			width: 140px;
+			position: relative;
+			background-color: #F7F7F7;
+			top: 50px;
+			border-radius: 15px;
+			li {
+				margin: 10px 0;
+				padding: 0 5px;
+			}
+		}
+	}
+	> div {
+		margin-top: 30px;
+	}
+	a {
+		text-decoration: none;
+		color: #000;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

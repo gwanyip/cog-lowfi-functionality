@@ -1,0 +1,91 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  background-color: #A1A1A1; }
+
+h1 {
+  font-size: 30px; }
+
+.container-main {
+  width: 960px;
+  height: 300px;
+  margin: 50px auto 0;
+  border-radius: 10px;
+  background-color: #fff; }
+
+.container-inner {
+  padding: 40px; }
+
+.container-report-dropdown {
+  margin-top: 40px; }
+  .container-report-dropdown .settings-icon {
+    background: url("../img/settings-icon.png") no-repeat;
+    display: block;
+    width: 50px;
+    height: 50px; }
+    .container-report-dropdown .settings-icon ul {
+      display: none;
+      padding: 15px;
+      width: 140px;
+      position: relative;
+      background-color: #F7F7F7;
+      top: 50px;
+      border-radius: 15px; }
+      .container-report-dropdown .settings-icon ul li {
+        margin: 10px 0;
+        padding: 0 5px; }
+  .container-report-dropdown > div {
+    margin-top: 30px; }
+  .container-report-dropdown a {
+    text-decoration: none;
+    color: #000; }
+    .container-report-dropdown a:hover {
+      text-decoration: underline; }
+
+/*# sourceMappingURL=style.css.map */
