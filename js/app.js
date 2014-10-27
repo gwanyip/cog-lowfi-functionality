@@ -26,3 +26,21 @@ leftCtrl.click(function(){
 rightCtrl.click(function(){
 	dashboard.removeClass('slide');
 })
+
+// Graph popup
+
+var dashboardShim = $(".dashboard-graph-shim");
+var activeGraph = $('#dashboard-graph');
+var bobToolTip = $(".dashboard-graph-user-container");
+
+activeGraph.click(function(){
+
+	dashboardShim.toggle();
+	setTimeout(function(){
+		bobToolTip.addClass("show");
+	}, 1000);
+	dashboardShim.click(function(e){		
+		e.preventDefault();
+		$(this).css('display','none');
+	});
+});

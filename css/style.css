@@ -118,6 +118,34 @@ h3 {
   .container-report-dropdown a:hover {
     text-decoration: underline; }
 
+.dashboard-graph-shim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(124, 124, 124, 0.8);
+  display: none; }
+  .dashboard-graph-shim .dashboard-graph-popup-container {
+    position: relative;
+    margin-top: 5%;
+    margin-left: 21%;
+    z-index: 100; }
+    .dashboard-graph-shim .dashboard-graph-popup-container .dashboard-graph-user-container {
+      position: absolute;
+      top: 382px;
+      left: 707px;
+      opacity: 0;
+      transition: opacity 1s ease-in-out; }
+      .dashboard-graph-shim .dashboard-graph-popup-container .dashboard-graph-user-container.show {
+        opacity: 1; }
+      .dashboard-graph-shim .dashboard-graph-popup-container .dashboard-graph-user-container a {
+        text-decoration: none;
+        padding: 6px 10px;
+        background-color: #454545;
+        border-radius: 8px;
+        color: #fff; }
+
 .dashboard-container {
   margin-top: 30px; }
   .dashboard-container .dashboard-cntrl {

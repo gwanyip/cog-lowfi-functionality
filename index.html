@@ -65,6 +65,15 @@
 				<div class="container-tabbed-reports">
 					<h2>Report dashboard slide</h2>
 					
+					<div class="dashboard-graph-shim">
+						<div class="dashboard-graph-popup-container">
+							<div class="dashboard-graph-user-container">
+								<a href="#">Bob</a>
+							</div>
+							<img src="img/dashboard-graph-expand.jpg">
+						</div>
+					</div>
+
 					<div class="dashboard-container">
 						<div class="dashboard-cntrl left">
 							
@@ -74,7 +83,10 @@
 						</div>
 						<div class="dashboard-window">
 							<div class="dashboard-content">
-								<img src="img/components.png">
+								<img src="img/components.png" usemap="#dashboard-map">
+								<map name="dashboard-map">
+									<area shape="rect" coords="195,1,593,401" id="dashboard-graph" href="#">
+								</map>
 							</div><!-- End .dashboard-content -->
 						</div>
 
