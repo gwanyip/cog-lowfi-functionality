@@ -2,6 +2,24 @@
 
 @import 'variables';
 
+// Clearfix
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
 body {
 	font-family: $helvetica;
 	background-color: #A1A1A1;
@@ -9,9 +27,11 @@ body {
 h1 {
 	font-size: 30px;
 }
+h3 {
+	margin: 10px 0;
+}
 .container-main {
 	width: 960px;
-	height: 300px;
 	margin: 50px auto 0;
 	border-radius: 10px;
 	background-color: #fff;
@@ -21,6 +41,13 @@ h1 {
 }
 .container-report-dropdown {
 	margin-top: 40px;
+	.container-report-dropdown-click,
+	.container-report-dropdown-hover {
+		float: left;
+	}
+	.container-report-dropdown-hover {
+		margin-left: 50px;
+	}
 	.settings-icon {
 		background: url('../img/settings-icon.png') no-repeat;
 		display: block;

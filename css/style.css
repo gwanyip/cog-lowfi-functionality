@@ -45,6 +45,23 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1; }
+
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   background-color: #A1A1A1; }
@@ -52,9 +69,11 @@ body {
 h1 {
   font-size: 30px; }
 
+h3 {
+  margin: 10px 0; }
+
 .container-main {
   width: 960px;
-  height: 300px;
   margin: 50px auto 0;
   border-radius: 10px;
   background-color: #fff; }
@@ -64,6 +83,11 @@ h1 {
 
 .container-report-dropdown {
   margin-top: 40px; }
+  .container-report-dropdown .container-report-dropdown-click,
+  .container-report-dropdown .container-report-dropdown-hover {
+    float: left; }
+  .container-report-dropdown .container-report-dropdown-hover {
+    margin-left: 50px; }
   .container-report-dropdown .settings-icon {
     background: url("../img/settings-icon.png") no-repeat;
     display: block;
