@@ -12,3 +12,17 @@ settingIconDropdown.click(function(){
 settingIconHover.hover(function(){
 	dropdownHover.toggle();
 })
+
+
+// Dashboard slide effect
+
+var dashboard = $(".dashboard-content");
+var leftCtrl = $(".dashboard-cntrl.left");
+var rightCtrl = $(".dashboard-cntrl.right");
+
+leftCtrl.click(function(){
+	dashboard.addClass('slide');
+})
+rightCtrl.click(function(){
+	dashboard.removeClass('slide');
+})
