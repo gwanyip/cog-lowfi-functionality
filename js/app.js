@@ -44,3 +44,25 @@ activeGraph.click(function(){
 		$(this).css('display','none');
 	});
 });
+
+// Alerts animation
+
+var alertBtn = $("#alert-btn");
+var alertIcon = $(".alert-icon");
+
+alertBtn.click(function(){
+	if (alertIcon.hasClass("expand")) {
+		alertIcon.removeClass("expand");
+	} else {
+		alertIcon.addClass("expand");
+	}
+});
+
+
+
+
+
+
+
+
+
