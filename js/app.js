@@ -64,7 +64,7 @@ $(document).ready(function(){
 	$("#catalog-dropdown-options").on("change", function(){
 		if($(this).val() === "hospitality"){
 			(function(){
-				$.get("../hospitality-apps.html", function(response){
+				$.get("hospitality-apps.html", function(response){
 					$("#catalog-container").children().remove();
 					$("#catalog-container").html(response);
 				});
