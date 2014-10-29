@@ -206,8 +206,10 @@ h3 {
 	75% { transform: scale(1); }
 
 }
-
-.catalog-container {
+.catalog-selector {
+	margin-top: 20px;
+}
+.app-container {
 	overflow: hidden;
 	margin-top: 40px;
 	border: 1px solid #aaaaaa;
@@ -215,10 +217,10 @@ h3 {
 	> * {
 		float: left;
 	}
-	.catalog-copy-container {
+	.app-copy-container {
 		width: 690px;
 		margin-left: 20px;
-		.catalog-copy-head {
+		.app-copy-head {
 			overflow: hidden;
 			margin-bottom: 20px;
 			margin-top: 15px;
@@ -235,6 +237,16 @@ h3 {
 				color: #fff;
 			}
 		}
+	}
+}
+#default-apps {
+	.app-container {
+		background-color: #C9C7FF;
+	}
+}
+#hospitality-apps {
+	.app-container {
+		background-color: #FFFDC7;
 	}
 }
 

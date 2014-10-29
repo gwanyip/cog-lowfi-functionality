@@ -216,29 +216,38 @@ h3 {
     transform: scale(2); }
   75% {
     transform: scale(1); } }
-.catalog-container {
+.catalog-selector {
+  margin-top: 20px; }
+
+.app-container {
   overflow: hidden;
   margin-top: 40px;
   border: 1px solid #aaaaaa;
   padding: 10px 5px; }
-  .catalog-container > * {
+  .app-container > * {
     float: left; }
-  .catalog-container .catalog-copy-container {
+  .app-container .app-copy-container {
     width: 690px;
     margin-left: 20px; }
-    .catalog-container .catalog-copy-container .catalog-copy-head {
+    .app-container .app-copy-container .app-copy-head {
       overflow: hidden;
       margin-bottom: 20px;
       margin-top: 15px; }
-      .catalog-container .catalog-copy-container .catalog-copy-head h3 {
+      .app-container .app-copy-container .app-copy-head h3 {
         float: left;
         margin-top: 10px;
         font-size: 25px; }
-      .catalog-container .catalog-copy-container .catalog-copy-head a {
+      .app-container .app-copy-container .app-copy-head a {
         float: right;
         text-decoration: none;
         padding: 10px 15px;
         background-color: #707070;
         color: #fff; }
+
+#default-apps .app-container {
+  background-color: #C9C7FF; }
+
+#hospitality-apps .app-container {
+  background-color: #FFFDC7; }
 
 /*# sourceMappingURL=style.css.map */

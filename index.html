@@ -114,31 +114,44 @@
 				<div class="container-catalog">
 					<h2>Catalog page</h2>
 					
-					<div class="catalog-container">
-						<img src="img/catalog-app-img.jpg">
-						<div class="catalog-copy-container">
-							<div class="catalog-copy-head">
-								<h3>App title</h3>
-								<a href="#" id="viewApp">VIEW APP</a>
-							</div><!-- End .catalog-copy-head -->
-							<div class="catalog-copy-body">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a est ut massa laoreet molestie. Aliquam quis nisi posuere, hendrerit eros ac, rutrum est. Maecenas consequat ligula a magna imperdiet, vel mollis enim imperdiet. Etiam tincidunt accumsan tellus in tempus. Nunc id finibus quam.</p>
-							</div><!-- End .catalog-copy-body -->
-						</div>
-					</div>
-					<div class="catalog-container">
-						<img src="img/catalog-app-img.jpg">
-						<div class="catalog-copy-container">
-							<div class="catalog-copy-head">
-								<h3>App title</h3>
-								<a href="#" id="viewApp">VIEW APP</a>
-							</div><!-- End .catalog-copy-head -->
-							<div class="catalog-copy-body">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a est ut massa laoreet molestie. Aliquam quis nisi posuere, hendrerit eros ac, rutrum est. Maecenas consequat ligula a magna imperdiet, vel mollis enim imperdiet. Etiam tincidunt accumsan tellus in tempus. Nunc id finibus quam.</p>
-							</div><!-- End .catalog-copy-body -->
-						</div>
+					<div class="catalog-selector">
+						<select id="catalog-dropdown-options">
+							<option>Select a category</option>
+							<option value="hospitality">Hospitality</option>
+							<option value="accounting">Accounting</option>
+							<option value="medical">Medical</option>
+							<option value="retail">Retail</option>
+						</select>
 					</div>
 					
+					<div id="catalog-container">
+						<div id="default-apps">
+							<div class="app-container">
+								<img src="img/catalog-app-img.jpg">
+								<div class="app-copy-container">
+									<div class="app-copy-head">
+										<h3>App title</h3>
+										<a href="#" id="viewApp">VIEW APP</a>
+									</div><!-- End .app-copy-head -->
+									<div class="app-copy-body">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a est ut massa laoreet molestie. Aliquam quis nisi posuere, hendrerit eros ac, rutrum est. Maecenas consequat ligula a magna imperdiet, vel mollis enim imperdiet. Etiam tincidunt accumsan tellus in tempus. Nunc id finibus quam.</p>
+									</div><!-- End .app-copy-body -->
+								</div>
+							</div>
+							<div class="app-container">
+								<img src="img/catalog-app-img.jpg">
+								<div class="app-copy-container">
+									<div class="app-copy-head">
+										<h3>App title</h3>
+										<a href="#" id="viewApp">VIEW APP</a>
+									</div><!-- End .app-copy-head -->
+									<div class="app-copy-body">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a est ut massa laoreet molestie. Aliquam quis nisi posuere, hendrerit eros ac, rutrum est. Maecenas consequat ligula a magna imperdiet, vel mollis enim imperdiet. Etiam tincidunt accumsan tellus in tempus. Nunc id finibus quam.</p>
+									</div><!-- End .app-copy-body -->
+								</div>
+							</div>
+						</div>
+					</div>
 					<!-- This is for the animation to bring up an app when 'View App' is clicked. Probably leave this for later -->
 					<!-- <div class="catalog-expand-shim">
 						<div class="catalog-expand-app">
