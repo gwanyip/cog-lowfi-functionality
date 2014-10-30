@@ -1,0 +1,42 @@
+/* Cognotion Demo Styles */
+
+
+/* general */
+
+ul { padding:0; }
+li { list-style-type:none; }
+
+
+/* navigation */
+
+nav { width:100%; height:55px; border-bottom:1px solid #ccc; }
+nav img { display:block; width:958px; margin:0 auto; }
+
+
+/* general content */
+
+.content { width:958px; margin:0 auto; }
+
+
+/* dashboard content */
+
+.content .feeds { margin:40px 0; overflow:auto; width:100%; }
+.content .feeds img { display:inline-block; float:left; }
+
+
+/* accounts landing content */
+
+.content ul.accounts-grid { display:block; width:894px; margin:0 auto; }
+.content ul.accounts-grid li { display:inline-block; width:200px; margin:0 30px 0 0; float:left;}
+.content ul.accounts-grid li:last-child { margin:0; }
+
+
+/* account overview content */
+
+img.app-card { display:block; width:894px; margin:40px auto 0; }
+
+
+/* catalog landing content */
+
+.content ul.catalog-listing { display:block; width:895px; margin:0 auto; }
+.content ul.catalog-listing li { display:inline-block; width:895px; margin:0 0 40px 0; float:left;}

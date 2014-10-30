@@ -1,0 +1,266 @@
+@import 'reset';
+
+@import 'variables';
+
+// Clearfix
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+%nav-btns {
+	display: inline-block;
+	position: relative;
+	top: 15px;
+	left: 15px;
+}
+body {
+	font-family: $helvetica;
+	background-color: #A1A1A1;
+}
+h1 {
+	font-size: 30px;
+	font-family: "open-sans", sans-serif;
+}
+h3 {
+	margin: 10px 0;
+}
+.container-main {
+	width: 960px;
+	margin: 50px auto 0;
+	border-radius: 10px;
+	background-color: #fff;
+}
+.container-inner {
+	padding: 40px;
+	> div {
+		margin-top: 40px;
+	}
+}
+.container-report-dropdown {
+	.container-report-dropdown-click,
+	.container-report-dropdown-hover {
+		float: left;
+	}
+	.container-report-dropdown-hover {
+		margin-left: 50px;
+	}
+	.settings-icon {
+		background: url('../img/settings-icon.png') no-repeat;
+		display: block;
+		width: 50px;
+		height: 50px;
+		ul {
+			display: none;
+			padding: 15px;
+			width: 140px;
+			position: relative;
+			background-color: #F7F7F7;
+			top: 50px;
+			border-radius: 15px;
+			z-index: 10;
+			li {
+				margin: 10px 0;
+				padding: 0 5px;
+			}
+		}
+	}
+	> div {
+		margin-top: 30px;
+	}
+	a {
+		text-decoration: none;
+		color: #000;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+.dashboard-graph-shim {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(124, 124, 124, 0.8);
+	display: none;
+	.dashboard-graph-popup-container {
+		position: relative;
+		margin-top: 5%;
+		margin-left: 21%;
+		z-index: 100;
+		.dashboard-graph-user-container {
+			position: absolute;
+			top: 382px;
+			left: 707px;
+			opacity: 0;
+			transition: opacity 1s ease-in-out;
+			&.show {
+				opacity: 1;
+			}
+			a {
+				text-decoration: none;
+				padding: 6px 10px;
+				background-color: #454545;
+				border-radius: 8px;
+				color: #fff;
+			}
+		}
+	}
+}
+.dashboard-container {
+	margin-top: 30px;
+	.dashboard-cntrl {
+		width: 50px;
+		height: 50px;
+		display: inline-block;
+		background-color: #FFBD00;
+		&.left::before {
+			content: "left";
+			@extend %nav-btns;
+		}
+		&.right::before {
+			content: "right";
+			@extend %nav-btns;
+		}
+	}
+	.dashboard-window {
+		overflow: hidden;
+	}
+	.dashboard-content {
+		margin-top: 30px;
+		transition: transform .8s ease-in-out;
+		&.slide {
+			transform: translateX(-60%);
+		}
+	}
+}
+.container-alerts {
+	#alert-btn {
+		margin-top: 15px;
+	}
+}
+.alert-container {
+	width: 370px;
+	display: block;
+	background-color: #f0f0f0;
+	margin-top: 30px;
+	padding: 18px 0;
+	border-radius: 10px;
+	a {
+		text-decoration: none;
+	}
+	.alert-icon {
+		font: 30px "open-sans";
+		font-weight: bolder;
+		padding: 2px 15px;
+		margin: 0 20px;
+		background-color: #ec3200;
+		color: #fff;
+		text-decoration: none;
+		display: inline-block;
+		//transition: animation 1s ease-out;
+		&.expand {
+			-webkit-animation: growskrink 1.5s 1 ease-in-out;
+			animation: growskrink 1.5s 1 ease-in-out;
+		}
+	}
+	.alert-text-container {
+		display: inline-block;	
+		font-family: "open-sans", arial;
+		.alert-red {
+			font-weight: bold;
+			color: #ec3200;
+		}
+		.time-notice {
+			font-size: 11px;
+			position: relative;
+			top: 5px;
+		}
+	}
+}
+
+@-webkit-keyframes growskrink {
+
+	25% { transform: scale(1); }
+	50% { transform: scale(2); }
+	75% { transform: scale(1); }
+}
+
+@keyframes growskrink {
+	
+	25% { transform: scale(1); }
+	50% { transform: scale(2); }
+	75% { transform: scale(1); }
+
+}
+.catalog-selector {
+	margin-top: 20px;
+}
+.app-container {
+	overflow: hidden;
+	margin-top: 40px;
+	border: 1px solid #aaaaaa;
+	padding: 10px 5px;
+	> * {
+		float: left;
+	}
+	.app-copy-container {
+		width: 690px;
+		margin-left: 20px;
+		.app-copy-head {
+			overflow: hidden;
+			margin-bottom: 20px;
+			margin-top: 15px;
+			h3 {
+				float: left;
+				margin-top: 10px;
+				font-size: 25px;
+			}
+			a {
+				float: right;
+				text-decoration: none;
+				padding: 10px 15px;
+				background-color: #707070;
+				color: #fff;
+			}
+		}
+	}
+}
+#default-apps {
+	.app-container {
+		background-color: #C9C7FF;
+	}
+}
+#hospitality-apps {
+	.app-container {
+		background-color: #FFFDC7;
+	}
+}
+.app-expand-shim {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 230%;
+	top: 0;
+	left: 0;
+	background-color: rgba(92,92,92,0.8);
+	.app-expanded {
+		width: 900px;
+		position: absolute;
+		bottom: 0;
+		left: 18%;
+	}
+}
