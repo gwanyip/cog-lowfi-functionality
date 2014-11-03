@@ -1,35 +1,39 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Cognotion – Dashboard</title>
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<nav>
-		<img src="img/nav_catalog.jpg" alt="nav" width="958" height="55" usemap="#nav"/>
-    		<map name="nav">
-    			<area shape="rect" coords="320,0,420,55" href="dashboard.html" />
-       			<area shape="rect" coords="440,0,555,55" href="account-landing.html" />
-    		</map>
-	</nav>
-	<div class="content">
-		<!-- Wrap this in a div called titlebar -->
-		<img src="img/industry-views.jpg" width="958" height="100" alt="titlebar" />
-		<!-- Wrap this in a div called info-options -->
-    	<img src="img/views_catalog.jpg" width="958" height="100" alt="view info and options" />
-    	<!-- Wrap this in a div called catalog-listing-container -->
-	  <ul class="catalog-listing">
-	  	<li><img src="img/thumb_app-catalog-listing.jpg" width="895" height="151" alt="view app" usemap="#thumb-listing" /></li>
-	  	<li><img src="img/thumb_app-catalog-listing.jpg" width="895" height="151" alt="view app" usemap="#thumb-listing" /></li>
-	  	<li><img src="img/thumb_app-catalog-listing.jpg" width="895" height="151" alt="view app" usemap="#thumb-listing" /></li>
-	  	<li><img src="img/thumb_app-catalog-listing.jpg" width="895" height="151" alt="view app" usemap="#thumb-listing" /></li>
-	  		<map name="thumb-listing">
-				<area shape="rect" coords="745,21,873,63" href="catalog-appexpanded.html" />
-			</map>	  	
-	  </ul>
-	</div><!-- .content --> 
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Cognotion – Catalog</title>
+		
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<nav>
+			<img src="img/nav_catalog.jpg" alt="nav" width="958" height="55" usemap="#nav"/>
+	    		<map name="nav">
+	    			<area shape="rect" coords="320,0,420,55" href="dashboard.html" />
+	       			<area shape="rect" coords="440,0,555,55" href="account-landing.html" />
+	    		</map>
+		</nav>
+		<div class="content">
+			<div class-"titlebar">
+				<img src="img/industry-views.jpg" width="958" height="100" alt="titlebar" />
+			</div><!-- titlebar -->
+			<div class="info-options">
+		    	<img src="img/views_catalog.jpg" width="958" height="100" alt="view info and options" />
+		    </div><!-- info-options -->
+		    <div class="catalog-listing-container">
+			  	<ul class="catalog-listing">
+				  	<li><img src="img/thumb_app-catalog-listing.jpg" width="895" height="151" alt="view app" usemap="#thumb-listing" /></li>
+				  	<li><img src="img/thumb_app-catalog-listing.jpg" width="895" height="151" alt="view app" usemap="#thumb-listing" /></li>
+				  	<li><img src="img/thumb_app-catalog-listing.jpg" width="895" height="151" alt="view app" usemap="#thumb-listing" /></li>
+				  	<li><img src="img/thumb_app-catalog-listing.jpg" width="895" height="151" alt="view app" usemap="#thumb-listing" /></li>
+				  		<map name="thumb-listing">
+							<area shape="rect" coords="745,21,873,63" href="catalog-expanded.html" />
+						</map>	  	
+			    </ul><!-- catalog-listing -->
+			</div><!-- catalog-listing-container -->
+		</div><!-- .content --> 
+	</body>
 </html>

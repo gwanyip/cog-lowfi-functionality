@@ -263,5 +263,7 @@ h3 {
     position: absolute;
     bottom: 0;
     left: 18%; }
+    .app-expand-shim .app-expanded img {
+      cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

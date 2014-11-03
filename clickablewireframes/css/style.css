@@ -9,19 +9,19 @@ li { list-style-type:none; }
 
 /* navigation */
 
-nav { width:100%; /* don't need this height:55px;*/ border-bottom:1px solid #ccc; }
+nav { width:100%; border-bottom:1px solid #ccc; }
 nav img { display:block; width:958px; margin:0 auto; }
 
 
 /* general content */
 
-.content { width:958px; margin:0 auto; }
+.content { width:960px; margin:0 auto; }
 
 
 /* dashboard content */
 
-.content .feeds { margin:40px 0; overflow:auto; /* don't need this width:100%;*/ }
-.content .feeds img { /* don't need this display:inline-block;*/ float:left; }
+.content .feeds { margin:40px 0; overflow:auto; }
+.content .feeds img { float:left; }
 
 
 /* accounts landing content */
@@ -29,6 +29,12 @@ nav img { display:block; width:958px; margin:0 auto; }
 .content ul.accounts-grid { display:block; width:894px; margin:0 auto; }
 .content ul.accounts-grid li { display:inline-block; width:200px; margin:0 30px 0 0; float:left;}
 .content ul.accounts-grid li:last-child { margin:0; }
+
+
+/* configuration content */
+
+.content .editor { overflow:auto; width:100%; }
+.content .editor img { display:inline-block; float:left; }
 
 
 /* account overview content */
@@ -40,3 +46,16 @@ img.app-card { display:block; width:894px; margin:40px auto 0; }
 
 .content ul.catalog-listing { display:block; width:895px; margin:0 auto; }
 .content ul.catalog-listing li { display:inline-block; width:895px; margin:0 0 40px 0; float:left;}
+
+
+/* catalog expanded content */
+
+img.app-title { display:block; width:895px; margin:40px auto 0; }
+img.subsection { display:block; width:895px; margin:0 auto; }
+
+
+/* user page content */
+
+img.userhead, img.charts { display:block; width:834px; margin:40px auto 0; }
+
+

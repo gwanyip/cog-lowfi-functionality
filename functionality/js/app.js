@@ -70,11 +70,18 @@ $(document).ready(function(){
 			}());
 		}
 	})
+});
 
-	// Activating app expand on hospitality app
-	$("#viewApp-Hosp-1").click(function(){
-		$(".app-expand-shim").css("display","block");
-	});
+// Activating app expand on hospitality app
+$(document).on("click", "#viewApp-Hosp-1", function(e){
+
+	e.preventDefault();
+	console.log("View app btn clicked");
+	$(".app-expand-shim").css("display","block");
+});
+// Closing App expanded
+$(document).on("click", ".app-expand-shim", function(){
+    $(".app-expand-shim").css("display","none");
 });
 
 
