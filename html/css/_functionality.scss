@@ -115,7 +115,7 @@
 		margin-top: 30px;
 		transition: transform .8s ease-in-out;
 		&.slide {
-			transform: translateX(-60%);
+			transform: translateX(-85%);
 		}
 	}
 }
@@ -239,8 +239,17 @@
 		}
 	}
 }
+.app-expand-close {
+	position: absolute;
+	display: block;
+	width: 95px;
+	height: 33px;
+	right: 283px;
+	top: 137px;
+}
 .account-tabs {
 	margin-top: 20px;
+	position: relative;
 	a {
 		text-decoration: none;
 	}
@@ -251,12 +260,14 @@
 ***************/
 
 .tabs {
-	position: relative;
+	position: absolute;
 	overflow: hidden;
 	margin: 0 auto;
-	width: 100%;
+	width: 90%;
 	font-weight: 300;
 	font-size: 1.25em;
+	top: 125px;
+	left: 45px;
 	img {
 		width: 100%;
 	}
@@ -361,7 +372,7 @@
 
 .content-wrap section p {
 	margin: 0;
-	padding: 0.75em 0;
+	padding: 0.15em 0;
 	color: rgba(40,44,42,0.05);
 	font-weight: 900;
 	font-size: 4em;

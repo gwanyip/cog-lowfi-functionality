@@ -17,8 +17,8 @@ settingIconHover.hover(function(){
 // Dashboard slide effect
 
 var dashboard = $(".dashboard-content");
-var leftCtrl = $(".dashboard-cntrl.left");
-var rightCtrl = $(".dashboard-cntrl.right");
+var rightCtrl = $(".dashboard-cntrl.left");
+var leftCtrl = $(".dashboard-cntrl.right");
 
 leftCtrl.click(function(){
 	dashboard.addClass('slide');
