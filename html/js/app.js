@@ -66,6 +66,7 @@ $(document).ready(function(){
 				$.get("catalog-landing-hospitality-apps.html", function(response){
 					$(".catalog-listing").children().remove();
 					$(".catalog-listing").html(response);
+					$("#catalog-title").html("Showing 4 results for Hospitality");
 				});
 			}());
 		}
