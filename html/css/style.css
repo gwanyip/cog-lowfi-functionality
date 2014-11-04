@@ -45,80 +45,43 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.cf:before,
-.cf:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */ }
-
-.cf:after {
-  clear: both; }
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.cf {
-  *zoom: 1; }
-
 .dashboard-container .dashboard-cntrl.left::before, .dashboard-container .dashboard-cntrl.right::before {
   display: inline-block;
   position: relative;
-  top: 15px;
+  top: 185px;
   left: 15px; }
 
-body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  background-color: #A1A1A1; }
-
-h1 {
-  font-size: 30px;
-  font-family: "open-sans", sans-serif; }
-
-h3 {
-  margin: 10px 0; }
-
-.container-main {
-  width: 960px;
-  margin: 50px auto 0;
-  border-radius: 10px;
-  background-color: #fff; }
-
-.container-inner {
-  padding: 40px; }
-  .container-inner > div {
-    margin-top: 40px; }
-
-.container-report-dropdown .container-report-dropdown-click,
-.container-report-dropdown .container-report-dropdown-hover {
-  float: left; }
-.container-report-dropdown .container-report-dropdown-hover {
-  margin-left: 50px; }
-.container-report-dropdown .settings-icon {
-  background: url("../img/settings-icon.png") no-repeat;
-  display: block;
-  width: 50px;
-  height: 50px; }
-  .container-report-dropdown .settings-icon ul {
-    display: none;
-    padding: 15px;
-    width: 140px;
-    position: relative;
-    background-color: #F7F7F7;
-    top: 50px;
-    border-radius: 15px;
-    z-index: 10; }
-    .container-report-dropdown .settings-icon ul li {
-      margin: 10px 0;
-      padding: 0 5px; }
-.container-report-dropdown > div {
-  margin-top: 30px; }
-.container-report-dropdown a {
-  text-decoration: none;
-  color: #000; }
-  .container-report-dropdown a:hover {
-    text-decoration: underline; }
+.reports {
+  position: relative; }
+  .reports .settings-icon {
+    position: absolute;
+    top: 14px;
+    left: 565px;
+    background: url("../img/settings-icon.png") no-repeat;
+    background-size: 100%;
+    display: block;
+    width: 18px;
+    height: 18px;
+    cursor: pointer; }
+    .reports .settings-icon ul {
+      display: none;
+      padding: 15px;
+      width: 140px;
+      position: relative;
+      background-color: #898989;
+      top: 20px;
+      border-radius: 15px;
+      z-index: 10; }
+      .reports .settings-icon ul li {
+        margin: 10px 0;
+        padding: 0 5px; }
+  .reports > div {
+    margin-top: 30px; }
+  .reports a {
+    text-decoration: none;
+    color: #fff; }
+    .reports a:hover {
+      text-decoration: underline; }
 
 .dashboard-graph-shim {
   position: absolute;
@@ -127,7 +90,8 @@ h3 {
   width: 100%;
   height: 100%;
   background-color: rgba(124, 124, 124, 0.8);
-  display: none; }
+  display: none;
+  z-index: 10; }
   .dashboard-graph-shim .dashboard-graph-popup-container {
     position: relative;
     margin-top: 5%;
@@ -149,19 +113,34 @@ h3 {
         color: #fff; }
 
 .dashboard-container {
-  margin-top: 30px; }
+  margin-top: 30px;
+  position: relative; }
   .dashboard-container .dashboard-cntrl {
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    background-color: #FFBD00; }
-    .dashboard-container .dashboard-cntrl.left::before {
-      content: "left"; }
-    .dashboard-container .dashboard-cntrl.right::before {
-      content: "right"; }
+    width: 40px;
+    height: 402px;
+    position: absolute;
+    background-color: #A8A8A8;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer; }
+    .dashboard-container .dashboard-cntrl.left {
+      top: 115px;
+      left: 50px; }
+      .dashboard-container .dashboard-cntrl.left::before {
+        content: "<"; }
+    .dashboard-container .dashboard-cntrl.right {
+      top: 115px;
+      right: 45px; }
+      .dashboard-container .dashboard-cntrl.right::before {
+        content: ">"; }
   .dashboard-container .dashboard-window {
-    overflow: hidden; }
+    width: 765px;
+    overflow: hidden;
+    position: absolute;
+    top: 85px;
+    left: 100px; }
   .dashboard-container .dashboard-content {
+    position: relative;
     margin-top: 30px;
     transition: transform .8s ease-in-out; }
     .dashboard-container .dashboard-content.slide {
@@ -409,5 +388,95 @@ h3 {
 
 .tabs-style-linemove nav a span {
   font-weight: 700; }
+
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1; }
+
+/************ Global Styles ************/
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  background-color: #FFF; }
+
+/* navigation */
+nav {
+  width: 100%;
+  border-bottom: 1px solid #ccc; }
+  nav img {
+    display: block;
+    width: 958px;
+    margin: 0 auto; }
+
+.content {
+  width: 960px;
+  margin: 0 auto; }
+
+.feeds {
+  margin: 40px 0;
+  overflow: auto; }
+  .feeds img {
+    float: left; }
+
+ul.accounts-grid {
+  display: block;
+  width: 894px;
+  margin: 0 auto; }
+  ul.accounts-grid li {
+    display: inline-block;
+    width: 200px;
+    margin: 0 30px 0 0;
+    float: left; }
+    ul.accounts-grid li:last-child {
+      margin: 0; }
+
+.editor {
+  overflow: auto;
+  width: 100%; }
+  .editor img {
+    display: inline-block;
+    float: left; }
+
+img.app-card {
+  display: block;
+  width: 894px;
+  margin: 40px auto 0; }
+
+ul.catalog-listing {
+  display: block;
+  width: 895px;
+  margin: 0 auto; }
+  ul.catalog-listing li {
+    display: inline-block;
+    width: 895px;
+    margin: 0 0 40px 0;
+    float: left; }
+
+img.app-title {
+  display: block;
+  width: 895px;
+  margin: 40px auto 0; }
+
+img.subsection {
+  display: block;
+  width: 895px;
+  margin: 0 auto; }
+
+img.userhead, img.charts {
+  display: block;
+  width: 834px;
+  margin: 40px auto 0; }
 
 /*# sourceMappingURL=style.css.map */

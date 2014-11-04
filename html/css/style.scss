@@ -1,0 +1,109 @@
+@import 'reset';
+
+@import 'variables';
+
+@import 'functionality';
+
+// Clearfix
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/************ Global Styles ************/
+
+body {
+	font-family: $helvetica;
+	background-color: #FFF;
+}
+
+
+
+/* navigation */
+
+nav {
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	img {
+		display: block;
+		width: 958px;
+		margin: 0 auto;
+	}
+}
+.content {
+	width: 960px;
+	margin: 0 auto;
+}
+.feeds {
+	margin: 40px 0;
+	overflow: auto;
+	img {
+		float: left;
+	}
+}
+ul.accounts-grid {
+	display: block;
+	width: 894px;
+	margin:0 auto;
+	li {
+		display: inline-block;
+		width: 200px;
+		margin: 0 30px 0 0;
+		float: left;
+		&:last-child {
+			margin: 0;
+		}
+	}
+}
+.editor {
+	overflow: auto;
+	width: 100%;
+	img {
+		display: inline-block;
+		float: left;
+	}
+}
+img.app-card {
+	display: block;
+	width: 894px;
+	margin: 40px auto 0;
+}
+ul.catalog-listing {
+	display: block;
+	width: 895px;
+	margin: 0 auto;
+	li {
+		display: inline-block;
+		width: 895px;
+		margin: 0 0 40px 0;
+		float: left;
+	}
+}
+img.app-title {
+	display: block;
+	width: 895px;
+	margin: 40px auto 0;
+}
+img.subsection {
+	display: block;
+	width: 895px;
+	margin: 0 auto;
+}
+img.userhead, img.charts {
+	display: block;
+	width: 834px;
+	margin: 40px auto 0;
+}
+
