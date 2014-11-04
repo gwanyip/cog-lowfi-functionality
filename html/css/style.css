@@ -195,8 +195,23 @@ table {
     transform: scale(2); }
   75% {
     transform: scale(1); } }
-.catalog-selector {
-  margin-top: 20px; }
+.titlebar {
+  position: relative; }
+  .titlebar .catalog-selector {
+    position: absolute;
+    top: 50px;
+    left: 29px; }
+    .titlebar .catalog-selector #catalog-dropdown-options {
+      width: 200px;
+      font-size: 20px; }
+
+.info-options {
+  position: relative; }
+  .info-options h3 {
+    position: absolute;
+    top: 48px;
+    left: 31px;
+    font-size: 22px; }
 
 .app-container {
   overflow: hidden;

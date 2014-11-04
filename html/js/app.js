@@ -63,25 +63,13 @@ $(document).ready(function(){
 	$("#catalog-dropdown-options").on("change", function(){
 		if($(this).val() === "hospitality"){
 			(function(){
-				$.get("hospitality-apps.html", function(response){
-					$("#catalog-container").children().remove();
-					$("#catalog-container").html(response);
+				$.get("catalog-landing-hospitality-apps.html", function(response){
+					$(".catalog-listing").children().remove();
+					$(".catalog-listing").html(response);
 				});
 			}());
 		}
 	})
-});
-
-// Activating app expand on hospitality app
-$(document).on("click", "#viewApp-Hosp-1", function(e){
-
-	e.preventDefault();
-	console.log("View app btn clicked");
-	$(".app-expand-shim").css("display","block");
-});
-// Closing App expanded
-$(document).on("click", ".app-expand-shim", function(){
-    $(".app-expand-shim").css("display","none");
 });
 
 
