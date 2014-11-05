@@ -25,7 +25,7 @@
 								<li><a href="#section-linemove-2" class="icon icon-box"><span>User List</span></a></li>
 								<li><a href="#section-linemove-3" class="icon icon-display"><span>Invite User(s)</span></a></li>
 								<li><a href="#section-linemove-4" class="icon icon-upload"><span>App Settings</span></a></li>
-								<li><a href="#section-linemove-5" class="icon icon-tools"><span>Configure App</span></a></li>
+								<li><a onclick="javascript:location.href='configuration.html'" class="icon icon-tools"><span>Configure App</span></a></li>
 							</ul>
 						</nav>
 						<div class="content-wrap">
@@ -39,9 +39,25 @@
 									<img src="img/account-userlist.jpg">
 								</p>
 							</section>
-							<section id="section-linemove-3"><p>3</p></section>
-							<section id="section-linemove-4"><p>4</p></section>
-							<section id="section-linemove-5"><p>5</p></section>
+							<section id="section-linemove-3">
+								<div class="account-tabs-invite-user">
+									<div class="account-tabs-invite-user-individual">
+										<label for="individual-user">Invite an individual user by email address</label>
+										<input type="text" name="individual-user" placeholder="Enter email address">
+										<button>Submit</button>
+									</div>
+									<hr>
+									<div class="account-tabs-invite-user-multiple">
+										<label for="browse">Upload multiple users by uploading a CSV</label>
+										<div class="browse-files">
+											<input name="browse-files-input" type="text"><button id="browse-files-submit">Browse</button>
+										</div>
+										<button>Upload</button>
+									</div>
+								</div>
+							</section>
+							<section id="section-linemove-4"><p></p></section>
+							<section id="section-linemove-5"><p></p></section>
 						</div><!-- /content -->
 					</div><!-- /tabs -->
 				</div><!-- End .account-tabs -->

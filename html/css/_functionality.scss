@@ -272,6 +272,34 @@
 		text-decoration: none;
 	}
 }
+.account-tabs-invite-user {
+	.account-tabs-invite-user-individual,
+	.account-tabs-invite-user-multiple {
+		width: 100%;
+		padding: 30px 0;
+		> * {
+			display: block;
+		}
+		label {
+			text-align: left;
+			margin-bottom: 20px;
+		}
+		input[name="individual-user"] {
+			margin-bottom: 15px;
+		}
+		.browse-files {
+			overflow: hidden;
+		> * {
+			display: inline-block;
+			float: left;
+		}
+		#browse-files-submit {
+				margin-bottom: 20px;
+				margin-left: 10px;
+			}
+		}
+	}
+}
 
 /***************
 ***** Tabs CSS *****
@@ -329,6 +357,9 @@
 	-moz-flex: 1;
 	-ms-flex: 1;
 	flex: 1;
+	&:last-child {
+		cursor: pointer;
+	}
 }
 
 .tabs nav a {
