@@ -97,6 +97,11 @@ table {
     margin-top: 5%;
     margin-left: 21%;
     z-index: 100; }
+    .dashboard-graph-shim .dashboard-graph-popup-container .close-btn {
+      cursor: pointer;
+      position: absolute;
+      right: 310px;
+      top: 10px; }
     .dashboard-graph-shim .dashboard-graph-popup-container .dashboard-graph-user-container {
       position: absolute;
       top: 382px;

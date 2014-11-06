@@ -32,17 +32,18 @@ rightCtrl.click(function(){
 var dashboardShim = $(".dashboard-graph-shim");
 var activeGraph = $('#dashboard-graph');
 var bobToolTip = $(".dashboard-graph-user-container");
+var closeBtn = $(".close-btn")
 
 activeGraph.click(function(){
 
 	dashboardShim.toggle();
 	setTimeout(function(){
 		bobToolTip.addClass("show");
-	}, 1000);
-	dashboardShim.click(function(e){		
-		e.preventDefault();
-		$(this).css('display','none');
-	});
+		closeBtn.click(function(e){		
+			e.preventDefault();
+			dashboardShim.css('display','none');
+		});
+	}, 700);
 });
 
 // Alerts animation

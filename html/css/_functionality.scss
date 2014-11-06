@@ -56,6 +56,12 @@
 		margin-top: 5%;
 		margin-left: 21%;
 		z-index: 100;
+		.close-btn {
+			cursor: pointer;
+			position: absolute;
+			right: 310px;
+			top: 10px;
+		}
 		.dashboard-graph-user-container {
 			position: absolute;
 			top: 382px;
